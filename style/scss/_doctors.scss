@@ -1,0 +1,76 @@
+.doctors-title {
+    @include h2;
+}
+
+.doctors-cards {
+    @media #{$small-tablet} {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 2%;
+    }
+}
+
+.doctor {
+    @include center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 45rem;
+    margin-bottom: 5rem;
+
+    &__img {
+        height: 35rem;
+        object-fit: scale-down;
+    }
+
+    &__title {
+        @include h3;
+        color: white;
+    }
+
+    &__desc {
+        padding: 0 3rem;
+        color: white;
+        line-height: $line-h;
+    }
+
+    &__tags {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tag {
+        padding: 0.5rem 1rem;
+        border: 1px solid;
+        border-radius: 2rem;
+
+        &:nth-child(1) {
+            border-color: #CAB8DF;
+        }
+
+        &:nth-child(2) {
+            border-color: #914D4D;
+        }
+
+        &:nth-child(3) {
+            border-color: #9E8B42;
+        }
+    }
+
+    @media #{$small-tablet} {
+        width: 45%;
+    }
+
+
+}
+
+.doctors-btn {
+    border-color: white;
+    color: white;
+}
+
+.doctors-line {
+    background-color: #fff;
+    ;
+}

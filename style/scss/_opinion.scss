@@ -1,0 +1,60 @@
+.opinions {
+    color: white;
+
+}
+
+.opionion-title {
+    @include h2;
+}
+
+.opinions-wrapper {
+    @media #{$small-tablet} {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+.opinion-img {
+    display: none;
+
+    @media #{$small-tablet} {
+        display: block;
+        width: 40%
+    }
+
+}
+
+.opinion {
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+
+    &__change {
+        position: absolute;
+        box-sizing: border-box;
+        padding: 0 3rem;
+        width: 100%;
+        transition: transform 2s;
+
+    }
+
+    &__text {
+        text-align: center;
+        line-height: $line-h;
+    }
+
+    &__author {
+        text-align: end;
+    }
+
+    @media #{$small-tablet} {
+        width: 40%;
+
+        &__change {
+            bottom: 0;
+        }
+    }
+}

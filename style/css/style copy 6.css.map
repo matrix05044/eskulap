@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,GAAG;CACxB",
+    "sources": [
+        "../scss/style copy 6.scss"
+    ],
+    "names": [],
+    "file": "style copy 6.css"
+}

@@ -1,0 +1,86 @@
+.title-2 {
+    @include h2;
+}
+
+.cards {
+    margin: 0 2%;
+
+    @media #{$small-tablet} {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    @include center;
+
+    height: 40rem;
+    position: relative;
+    margin-bottom: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 45rem;
+
+
+    &:nth-child(1) {
+        background-image: url('../../assets/pic1.jpg');
+
+    }
+
+    &:nth-child(2) {
+        background-image: url('../../assets/pic2.jpg');
+    }
+
+    &:nth-child(3) {
+        background-image: url('../../assets/3pic.jpg');
+    }
+
+    &__title {
+        @include h3;
+    }
+
+    &__description {
+        position: absolute;
+        bottom: 0;
+        background-color: $default;
+        color: white;
+        opacity: 0.9;
+        padding: 2rem;
+        height: 30%;
+        line-height: $line-h;
+    }
+
+    &__hidden-text {
+        display: none;
+    }
+
+    @media #{$small-tablet} {
+        width: 45%;
+
+    }
+
+}
+
+.btn {
+    @include center;
+
+    display: block;
+    font-size: 1.9rem;
+    padding: 1rem;
+    border: 1px solid $default;
+    width: 20rem;
+    text-align: center;
+
+}
+
+.line {
+    @include center;
+    display: block;
+    width: 70%;
+    height: 1px;
+    background-color: $default;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    opacity: .5;
+}

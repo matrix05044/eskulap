@@ -1,0 +1,25 @@
+@mixin hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: $default;
+    position: absolute;
+}
+
+@mixin center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin h2 {
+    font-size: 3.4rem;
+    letter-spacing: 0.7rem;
+    font-weight: inherit;
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+@mixin h3 {
+    font-size: 1.6rem;
+    letter-spacing: 0.5rem;
+    font-weight: normal;
+}

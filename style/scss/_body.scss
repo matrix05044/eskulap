@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html {
+    font-family: 'Montserrat', 'Arial';
+    font-size: 62.5%;
+    color: $default;
+}
+
+body {
+    // overflow-x: hidden;
+
+
+    background: rgb(102, 102, 102);
+    background: linear-gradient(0deg, rgba(102, 102, 102, 1) 0%, rgba(102, 102, 102, 1) 50%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 1) 100%);
+}
